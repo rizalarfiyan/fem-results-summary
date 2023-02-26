@@ -1,0 +1,162 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 32px;
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 680px;
+    box-shadow: 0 20px 50px hsla(241, 100%, 89%, 0.5);
+    display: flex;
+}
+
+.card>* {
+    width: 100%;
+    padding: 30px 40px;
+}
+
+.result {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    border-radius: 32px;
+}
+
+.result .total-score {
+    margin: 30px auto;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.result h2 {
+    color: hsl(241, 100%, 89%);
+}
+
+.result h1 {
+    color: hsl(0, 0%, 100%);
+    line-height: 1;
+}
+
+.result .score {
+    color: hsl(0, 0%, 100%);
+    font-size: 62px;
+    font-weight: bold;
+    line-height: 1
+}
+
+.result .total,
+.result p {
+    color: hsl(241, 100%, 89%);
+}
+
+.summary h2 {
+    color: hsl(224, 30%, 27%);
+}
+
+.summary .content-wrapper {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.summary .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.summary .content:nth-child(1) {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, .07);
+}
+
+.summary .content:nth-child(2) {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, .07);
+}
+
+.summary .content:nth-child(3) {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, .07);
+}
+
+.summary .content:nth-child(4) {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, .07);
+}
+
+.summary .name {
+    display: flex;
+    gap: 8px;
+}
+
+.summary .current {
+    color: hsl(224, 30%, 27%);
+    font-weight: bold;
+}
+
+.summary .max {
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+button {
+    margin: 40px auto 0;
+    display: block;
+    width: 100%;
+    padding: 14px 10px;
+    border-radius: 100px;
+    border: none;
+    font-weight: bold;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    padding: 16px;
+    width: 100%;
+    color: hsl(218, 44%, 22%);
+}
+
+.attribution a {
+    color: hsl(218, 44%, 22%)
+}
