@@ -30,7 +30,7 @@ main {
     overflow: hidden;
     border-radius: 32px;
     background-color: hsl(0, 0%, 100%);
-    width: 100%;
+    width: calc(100% - 30px);
     max-width: 680px;
     box-shadow: 0 20px 50px hsla(241, 100%, 89%, 0.5);
     display: flex;
@@ -93,7 +93,7 @@ main {
 .summary .content {
     display: flex;
     justify-content: space-between;
-    padding: 12px;
+    padding: 14px;
     border-radius: 6px;
 }
 
@@ -159,4 +159,30 @@ button:hover {
 
 .attribution a {
     color: hsl(218, 44%, 22%)
+}
+
+@media only screen and (max-width: 640px) {
+    .card {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .card>* {
+        padding: 10px 40px 30px;
+    }
+
+    .result {
+        border-radius: 0 0 32px 32px;
+    }
+
+    button {
+        margin: 40px auto 30px;
+    }
+
+    .attribution {
+        position: inherit;
+    }
+
 }
